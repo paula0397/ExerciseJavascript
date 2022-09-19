@@ -53,3 +53,11 @@ function obtenerDatosDelUsuario() {
   console.log(datosPersona);
 }
 
+function renderizarDatosUsuario() {
+  obtenerDatosDelUsuario();
+  document.getElementById("nombre").innerText = datosPersona.nombre;
+  document.getElementById("edad").innerText = datosPersona.edad;
+  document.getElementById("ciudad").innerText = datosPersona.ciudad;
+  document.getElementById("javascript").innerText = datosPersona.interesPorJs;
+}
+
