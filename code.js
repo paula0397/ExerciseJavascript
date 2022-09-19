@@ -75,3 +75,8 @@ function recorrerListadoYRenderizarTarjetas() {
     `;
   });
 }
+
+function alternarColorTema() {
+  let body = document.getElementById("sitio");
+  body.classList.toggle("dark");
+}
