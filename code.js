@@ -61,3 +61,17 @@ function renderizarDatosUsuario() {
   document.getElementById("javascript").innerText = datosPersona.interesPorJs;
 }
 
+function recorrerListadoYRenderizarTarjetas() {
+  let fila = document.querySelector("#fila");
+  fila.innerHTML = "";
+
+  listado.forEach((lista) => {
+    fila.innerHTML += `
+      <div class = "caja">
+        <img src="${lista.imgUrl}" alt="${lista.lenguajes}">
+        <p class = 'lenguajes'>${lista.lenguajes}</p>
+        <p class = 'bimestre'>${lista.bimestre}</p>
+      </div>
+    `;
+  });
+}
