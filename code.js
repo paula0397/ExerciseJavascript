@@ -80,3 +80,13 @@ function alternarColorTema() {
   let body = document.getElementById("sitio");
   body.classList.toggle("dark");
 }
+
+let oculto = document.querySelector(".oculto");
+let contenido = document.querySelector("#sobre-mi");
+
+document.addEventListener("keydown", (e) => {
+  if (e.key == "F") {
+    contenido.classList.remove("oculto");
+    console.log(contenido);
+  }
+});
